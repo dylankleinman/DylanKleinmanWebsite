@@ -8,11 +8,18 @@
   max-height: 750px;
 }
 
-.Image2{
-  display: block;
-  max-height: 500px;
-  margin-left: auto;
-  margin-right: auto;
+.RightBoxImage{
+  min-height: 500px;
+}
+
+.PanelImages{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+}
+
+.Image3{
 }
 
 .LeftBox{
