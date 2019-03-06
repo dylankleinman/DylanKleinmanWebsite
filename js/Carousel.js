@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  console.log('here');
+  console.log('testing');
   $('.your-class').slick({
   dots: true,
   infinite: true,
