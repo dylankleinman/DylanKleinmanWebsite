@@ -1,5 +1,5 @@
 # Website of Dylan Kleinman
-Taken from boilerplate of Bootstrap
+Taken from boilerplate of Bootstrap, this will contain my resume, portfolio, github, links and other experimental projects.
 
 
 ## Copyright and License
