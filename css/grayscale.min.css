@@ -3,6 +3,26 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
+ .slick-prev:before, .slick-next:before{
+     color:gray;
+ }
+
+ .slider{
+   max-width: 555px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+ }
+
+.slick-prev{
+  left: 0px;
+  z-index: 1;
+}
+
+.slick-next{
+  right: 0px;
+  z-index: 1;
+}
 
 .Image1{
   max-height: 750px;
@@ -23,8 +43,9 @@
 }
 
 .LeftBox{
-  background-image: linear-gradient(white , black);
+  background-image: gray;
   min-height: 500px;
+  position: relative;
 }
 .LogoImages{
   width: 50px;
