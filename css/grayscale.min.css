@@ -4,6 +4,21 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
+.Image1{
+  max-height: 750px;
+}
+
+.Image2{
+  display: block;
+  max-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.LeftBox{
+  background-image: linear-gradient(white , black);
+  min-height: 500px;
+}
 .LogoImages{
   width: 50px;
   height: 50px;
@@ -184,7 +199,7 @@
 }
 
 .projects-section {
-  padding: 10rem 0
+  padding: 5rem 0
 }
 
 .projects-section .featured-text {
