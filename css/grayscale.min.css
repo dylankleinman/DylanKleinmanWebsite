@@ -9,9 +9,6 @@
 
  .slider{
    max-width: 555px;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
  }
 
 .slick-prev{
@@ -39,9 +36,6 @@
   margin: auto;
 }
 
-.Image3{
-}
-
 .LeftBox{
   background-image: gray;
   min-height: 500px;
@@ -52,6 +46,10 @@
   height: 50px;
   border-radius: 50%;
   background-color: white;
+}
+
+.img-fluid{
+  margin: auto;
 }
 
 #mainNav {
