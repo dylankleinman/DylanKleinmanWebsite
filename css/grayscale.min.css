@@ -4,6 +4,22 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
+.lowerimage{
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  padding: 12rem 0;
+  background: linear-gradient(to bottom, rgba(37, 37, 37, 1) 0, rgba(54, 54, 54, .7) 55%, rgba(68, 68, 68, 0.35) 100%), url(../img/blackwhite.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover
+}
+
+.slick-dots{
+  bottom: -50px;
+}
+
  .img-shadow{
    max-width: 95%;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -51,6 +67,7 @@
 .LeftBox{
   min-height: 500px;
   position: relative;
+  background-color: #80808038;
 }
 .LogoImages{
   width: 50px;
@@ -151,8 +168,8 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, .1)), color-stop(75%, rgba(22, 22, 22, .5)), to(#161616)), url(../img/IMG_3140.jpg);
-  background: linear-gradient(to bottom, rgba(22, 22, 22, .1) 0, rgba(22, 22, 22, .5) 75%, #161616 100%), url(../img/IMG_3140.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, .1)), color-stop(75%, rgba(22, 22, 22, .5)), to(#161616)), url(../img/Wave.jpg);
+  background: linear-gradient(to bottom, rgba(22, 22, 22, .1) 0, rgba(22, 22, 22, .5) 75%, #161616 100%), url(../img/Wave.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
