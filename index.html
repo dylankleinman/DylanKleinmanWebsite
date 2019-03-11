@@ -26,7 +26,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top" style="margin-left:-5%;"><img src="img/Logo_clean_cut.png" alt=""></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -58,13 +58,13 @@
   </header>
 
   <!-- About Section -->
-  <section id="about" class="about-section text-center">
+  <section class="about-section text-center">
     <div class="info">
-      <div class="row">
+      <div class="row" id="about">
         <div class="lowerimage">
           <h2 class="text-white mb-4">Who am I?</h2>
-          <p class="text-white-50 center-in-div" style="width: 500px;">I am a 22 year old newly college grad from Santa Monica.  I love surfing, my dogs, street art, computers, video games, traveling, and meeting new people.
-          I consider myself a jack of all trades with an obsessive personality, where I can pick up new hobbies pretty quickly and never let them go.  </p>
+          <p class="text-white-50 center-in-div" style="width: 50%;">I am a 22 year old newly college grad from Santa Monica.  I love surfing, my dogs, street art, computers, video games, traveling, and meeting new people.
+          I consider myself a jack of all trades with an obsessive personality, where I can pick up new hobbies quickly and never let them go.  </p>
         </div>
       </div>
       <!--here is the image below the header image-->
@@ -72,19 +72,19 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="projects-background-image bg-light">
+  <section class="projects-background-image bg-light">
     <div class="container projects-section" >
 
       <!-- Featured Project Row -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5" >
         <div class="col-xl-8 col-lg-7">
-          <img class="Image1 img-fluid mb-3 mb-lg-0" align="middle" src="img/IMG_0200.jpg" alt="">
+          <img class="Image1 img-fluid mb-3 mb-lg-0" align="middle" src="img/IMG_0200.jpg" alt="" id="projects">
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4>What I Do</h4>
             <p class="text-black-50 mb-0">I am a Software Developer with a focus in Web Development.  I work mainly with HTML, CSS, JavaScript, and jQuery.  I love discovering new plugins and libraries that
-            that are visually appealling.  Check out some of my projects <a>here</a>.</p>
+            that are visually appealling.  Check out some of my projects <a href="/three.html">here</a>.</p>
           </div>
         </div>
       </div>
@@ -118,7 +118,7 @@
                 </p>
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
-              <a type="submit" href='/Projects.html' class="right-box-button btn btn-primary">See More</a>
+              <button type="submit" onclick="location.href='/Projects.html';" class="right-box-button btn btn-primary">See More</button>
             </div>
           </div>
         </div>
@@ -126,7 +126,7 @@
 
       <!-- Project Two Row -->
       <div class="row justify-content-center no-gutters">
-        <div class="RightBoxImage col-lg-6">
+        <div class="LeftBox col-lg-6">
           <img class="img-fluid PanelImages" src="img/IMG_3293.jpg" alt="">
         </div>
         <div class="col-lg-6 order-lg-first">
@@ -173,9 +173,9 @@
           <div class="card py-4 h-100">
             <div class="card-body text-center">
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Address</h4>
+              <h4 class="text-uppercase m-0">Location</h4>
               <hr class="my-4">
-              <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+              <div class="small text-black-50">Santa Monica, CA</div>
             </div>
           </div>
         </div>
@@ -187,7 +187,7 @@
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a href="#">hello@yourdomain.com</a>
+                <a href="#">dylankkleinman@gmail.com.com</a>
               </div>
             </div>
           </div>
@@ -199,20 +199,23 @@
               <i class="fas fa-mobile-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Phone</h4>
               <hr class="my-4">
-              <div class="small text-black-50">+1 (555) 902-8832</div>
+              <div class="small text-black-50">(310) 913 9166</div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="social d-flex justify-content-center">
-        <a href="#" class="mx-2">
+        <a href="https://www.facebook.com/dylkleinperson" class="mx-2">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="#" class="mx-2">
+        <a href="https://www.linkedin.com/in/dylankleinman/" class="mx-2">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/dylankleinman/DylanKleinmanWebsite" class="mx-2">
           <i class="fab fa-github"></i>
         </a>
-        <a href="#" class="mx-2">
+        <a href="https://www.instagram.com/dylankleinman/" class="mx-2">
           <i class="fab fa-instagram"></i>
         </a>
       </div>
@@ -221,7 +224,7 @@
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Your Website 2019
+      Copyright &copy; DylanKleinman.com 2019
     </div>
   </footer>
   <!-- Bootstrap core JavaScript -->
