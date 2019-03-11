@@ -2,8 +2,8 @@ $(document).ready(function(){
   console.log('ready');
   //example of three.js
 
-  var WIDTH = 400,
-    HEIGHT = 300;
+  var WIDTH = $(document).width(),
+    HEIGHT = $(document).height();
 
   var FOV = 75,
     ASPECT = WIDTH / HEIGHT,
@@ -17,11 +17,11 @@ $(document).ready(function(){
 
   var renderer = new THREE.WebGLRenderer();
   renderer.setSize(WIDTH, HEIGHT);
-  document.body.appendChild(renderer.domElement);
+  $('#content').append(renderer.domElement);
 
   var geometry = new THREE.BoxGeometry(1, 1, 1);
   var material = new THREE.MeshBasicMaterial({
-    color: 0x0000ff
+    color: 0x00ffff
   });
   var cube = new THREE.Mesh(geometry, material);
   scene.add(cube);
@@ -37,3 +37,5 @@ $(document).ready(function(){
 
   animate();
 })
+
+function displayCube(){}

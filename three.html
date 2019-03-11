@@ -34,19 +34,27 @@
 
 	<div id="mySidebar" class="sidebar">
 		<a class="closebtn">&times;</a>
-		<a href="#">About</a>
+		<div class="dropdown show">
+			<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Dropdown link
+			</a>
+
+			<div class="dropdown-menu dropdown-menu-left-nav" aria-labelledby="dropdownMenuLink">
+				<a class="dropdown-item small-item" href="#">Action</a>
+				<a class="dropdown-item" href="#">Another action</a>
+				<a class="dropdown-item" href="#">Something else here</a>
+			</div>
+		</div>
 		<a href="#">Services</a>
 		<a href="#">Clients</a>
 		<a href="#">Contact</a>
 	</div>
 
 	<div id="main">
-		<button class="openbtn">&#9776; Toggle Sidebar</button>
+		<button class="openbtn">&#9776;</button>
 		<div id='content'>
 
 		</div>
-		<h2>Collapsed Sidebar</h2>
-		<p>Content...</p>
 	</div>
 </body>
 

@@ -11,4 +11,5 @@ $(document).ready(function(){
     $("#mySidebar").css('width', '0px');
     $("#main").css('marginLeft', '0px');
   });
+  $('#dropdownMenuLink1').attr('aria-expanded',)
 });
