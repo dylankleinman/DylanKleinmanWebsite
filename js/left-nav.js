@@ -1,6 +1,8 @@
 $(document).ready(function(){
   console.log('ready');
-  var NavOpen = false;
+
+  //$(".sidebar").mCustomScrollbar();
+
   $('.openbtn').click(function(){
     $("#mySidebar").css('width', '250px');
     $("#main").css('marginLeft', '250px');
@@ -11,5 +13,17 @@ $(document).ready(function(){
     $("#mySidebar").css('width', '0px');
     $("#main").css('marginLeft', '0px');
   });
-  $('#dropdownMenuLink1').attr('aria-expanded',)
+
+  /*moves the other menu items down when a dropdown is opened*/
+  $('#dropdownMenuLink1').click(function(){
+    if($(this).attr('aria-expanded') == 'false'){
+      $('.MenuItem').each(function(){
+        $(this).addClass('transform-down');
+      });
+    }else{
+      $('.MenuItem').each(function(){
+        $(this).removeClass('transform-down');
+      });
+    }
+  });
 });

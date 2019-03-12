@@ -4,6 +4,14 @@
   font-size: 15px !important;
 }
 
+.small-item:hover{
+  background-color: transparent !important;
+}
+
+.transform-down{
+  transform: translate3d(5px,125px,0px);
+}
+
 .dropdown-menu-left-nav{
   font-size: 0.5rem !important;
   background-color: transparent !important;

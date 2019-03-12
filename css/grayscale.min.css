@@ -3,6 +3,14 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
+ .mCSB_inside > .mCSB_container {
+   margin-right: 0px !important;
+ }
+
+ .body_content {
+   position: relative;
+ }
+
 .row{
   margin: 0px;
 }

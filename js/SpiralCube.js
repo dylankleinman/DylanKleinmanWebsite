@@ -2,7 +2,7 @@ $(document).ready(function(){
   console.log('ready');
   //example of three.js
 
-  var WIDTH = $(document).width(),
+  var WIDTH = $('#main').width()-20,
     HEIGHT = $(document).height();
 
   var FOV = 75,
