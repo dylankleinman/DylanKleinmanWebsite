@@ -3,17 +3,30 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
+ .resume-download{
+   margin-left:15%;
+ }
+
+ .Resume-Bar{
+   width: 250px;
+   text-align: left;
+   border-color: #64a19d;
+   border-width: 0.25rem;
+ }
+
  .mCSB_inside > .mCSB_container {
    margin-right: 0px !important;
  }
 
  .download-button{
    padding: 10px 15px;
-   margin-left: 15%;
    border-radius: 10px;
-   margin-bottom: 15px;
+   margin-bottom: 5px;
    cursor: pointer;
    text-align: center;
+   font-size: 1.25rem;
+   float: right;
+   margin-right: 20%;
  }
 
 .row{
@@ -326,7 +339,7 @@
 }
 
 .signup-section {
-  padding: 10rem 0;
+  padding: 6rem 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, .1)), color-stop(75%, rgba(22, 22, 22, .5)), to(#161616)), url(../img/bg-signup.jpg);
   background: linear-gradient(to bottom, rgba(22, 22, 22, .1) 0, rgba(22, 22, 22, .5) 75%, #161616 100%), url(../img/bg-signup.jpg);
   background-position: center;
@@ -348,7 +361,6 @@
 }
 
 .contact-section {
-  padding: 5rem 0 0
 }
 
 .contact-section .card {
@@ -418,5 +430,5 @@ a:focus, a:hover {
 }
 
 footer {
-  padding: 5rem 0
+  padding: 2rem 0
 }

@@ -13,7 +13,14 @@ $(document).ready(function() {
   //Remove default scroll bar and set the custom scrollbar to body
   $("#resume-box").mCustomScrollbar({
     theme: "inset-dark",
-  })
+    callbacks:{
+        whileScrolling:function(){
+          console.log(this.mcs.topPct);
+          $('.Resume-Bar').width(this.mcs.topPct * 13);
+        }
+    }
+  });
+
 
   var toolbox = $('#resume-box'),
     height = toolbox.height(),
