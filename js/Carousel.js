@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
   $('.slider').slick({
     dots: true,
     infinite: true,
@@ -11,11 +11,17 @@ $(document).ready(function(){
   });
 
   //Remove default scroll bar and set the custom scrollbar to body
-  $(".body_content").height($(window).height()).mCustomScrollbar({
+  $("#resume-box").mCustomScrollbar({
     theme: "inset-dark",
   })
 
-  $(document).change(function(){
-    console.log('changed');
-  })
+  var toolbox = $('#resume-box'),
+    height = toolbox.height(),
+    scrollHeight = toolbox.get(0).scrollHeight;
+
+  toolbox.off("mousewheel").on("mousewheel", function(event) {
+    var blockScrolling = this.scrollTop === scrollHeight - height && event.deltaY < 0 || this.scrollTop === 0 && event.deltaY > 0;
+    return !blockScrolling;
+  });
+
 });

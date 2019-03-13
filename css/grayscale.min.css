@@ -7,12 +7,28 @@
    margin-right: 0px !important;
  }
 
- .body_content {
-   position: relative;
+ .download-button{
+   padding: 10px 15px;
+   margin-left: 15%;
+   border-radius: 10px;
+   margin-bottom: 15px;
+   cursor: pointer;
+   text-align: center;
  }
 
 .row{
   margin: 0px;
+}
+
+.line-break{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+
+.resume-container{
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
  .projects-background-image{
@@ -63,7 +79,6 @@
 }
 
  .slider{
-   max-width: 555px;
  }
 
 .slick-prev{
@@ -166,7 +181,7 @@
     color: #fff
   }
   #mainNav.navbar-shrink {
-    background-color: #D8D8D8
+    background:rgba(190, 196, 206, 0.5);
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #161616
