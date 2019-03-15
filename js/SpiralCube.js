@@ -1,9 +1,10 @@
 $(document).ready(function(){
   console.log('ready');
   //example of three.js
+  console.log((window.location.href).includes('Projects'));
 
-  var WIDTH = $('#main').width()-20,
-    HEIGHT = $(document).height();
+  var WIDTH = (window.location.href).includes('Projects') ? $(window).width() : 600,
+    HEIGHT = (window.location.href).includes('Projects') ? $(window).height() : 500;
 
   var FOV = 75,
     ASPECT = WIDTH / HEIGHT,
@@ -19,6 +20,10 @@ $(document).ready(function(){
   renderer.setSize(WIDTH, HEIGHT);
   $('#content').append(renderer.domElement);
 
+  var demo = new THREE.WebGLRenderer();
+  demo.setSize(WIDTH, HEIGHT);
+  $('#display-project').append(demo.domElement);
+
   var geometry = new THREE.BoxGeometry(1, 1, 1);
   var material = new THREE.MeshBasicMaterial({
     color: 0x00ffff
@@ -33,6 +38,7 @@ $(document).ready(function(){
     cube.rotation.y += 0.1;
 
     renderer.render(scene, camera);
+    demo.render(scene, camera);
   };
 
   animate();
