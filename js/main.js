@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+  //Add slick jquery slider to art photos. \
   $('.slider').slick({
     dots: true,
     infinite: true,
@@ -11,17 +13,24 @@ $(document).ready(function() {
   });
 
   //Remove default scroll bar and set the custom scrollbar to body
+  // get the width of the resume /100 so that when scrolling, the bar across the top increases to 100% of the resume box.
+  //var MaxWidth = $('#max-resume-width').width()/100;
+  //console.log(MaxWidth);
   $("#resume-box").mCustomScrollbar({
-    theme: "inset-dark",
-    callbacks:{
+    theme: "minimal-dark",
+    /*callbacks:{
         whileScrolling:function(){
-          console.log(this.mcs.topPct);
-          $('.Resume-Bar').width(this.mcs.topPct * 13);
+          console.log(MaxWidth*this.mcs.topPct);
+          $('.Resume-Bar').width(MaxWidth*this.mcs.topPct+25);
         }
-    }
+    }*/
   });
 
+  //Add in the video next to the 'my life' section.  This uses vidbacking jquery
+  $('#video-back').vidbacking().css('height',$('.LeftBox').height());
+  $('.vidbacking-active-block-back').css('transform','none').css('position','static');
 
+  //Stop scrolling of whole page when inner scrolling is happening
   var toolbox = $('#resume-box'),
     height = toolbox.height(),
     scrollHeight = toolbox.get(0).scrollHeight;

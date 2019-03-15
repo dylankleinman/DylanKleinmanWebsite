@@ -22,6 +22,8 @@
   <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
   <!-- Custom styles for this template -->
   <link href="css/grayscale.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.vidbacking.css" type="text/css">
+
 
 </head>
 
@@ -52,414 +54,428 @@
       </div>
     </div>
   </nav>
-  <div class="body_content">
 
-    <!-- Header -->
-    <header class="masthead">
-      <div class="container d-flex h-100 align-items-center">
-        <div class="mx-auto text-center">
-          <h1 class="mx-auto my-0 text-uppercase">Dylan Kleinman</h1>
-          <h2 class="text-white-50 mx-auto mt-2 mb-5">Street x Web</h2>
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">Dylan Kleinman</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Street x Web</h2>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-section text-center">
+    <div class="info">
+      <div class="row" id="about">
+        <div class="lowerimage">
+          <h2 class="text-white mb-4">Who am I?</h2>
+          <p class="text-white-50 center-in-div" style="width: 50%;">I am a 22 year old recent computer science graduate from Santa Monica.
+            I love surfing, my dogs, street art, computers, video games, traveling, and meeting new people. I consider myself a jack
+            of all trades with an obsessive personality, where I quckly pick
+            up new hobbies and find amusement in almost everything I do.</p>
         </div>
       </div>
-    </header>
+      <!--here is the image below the header image-->
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section class="about-section text-center">
-      <div class="info">
-        <div class="row" id="about">
-          <div class="lowerimage">
-            <h2 class="text-white mb-4">Who am I?</h2>
-            <p class="text-white-50 center-in-div" style="width: 50%;">I am a 22 year old newly college grad from Santa Monica. I love surfing, my dogs, street art, computers, video games, traveling, and meeting new people. I consider myself a jack
-              of all trades with an obsessive personality, where I can pick
-              up new hobbies quickly and never let them go. </p>
+
+  <section class="resume-container bg-light">
+    <div class='resume-download'>
+      <h2> My Resume
+        <a href="/Downloadables/DylanKleinmanResume.pdf" download="DylanKleinmanResume.pdf">
+          <i class="download-button btn-primary fa fa-download" aria-hidden="true" id="resume" title="Download a copy of my resume">
+            <span style="font-family: Nunito; margin-left:5px; font-weight: 300;">Download</span>
+          </i>
+        </a>
+      </h2>
+      <hr class="Resume-Bar">
+    </div>
+    <div class="container card img-shadow" id="max-resume-width" style="max-width:70%">
+      <div class="container-fluid p-0" id="resume-box" style=" height:700px;">
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center">
+          <img class="img-fluid img-shadow" src="img/Profile.jpg" style="max-height:150px; border-radius:50%; margin-right: 35px;">
+          <div class="w-100">
+            <h1 class="mb-0">Dylan
+              <span class="text-primary">Kleinman</span>
+            </h1>
+            <div class="subheading mb-5">2302 24th Street, Santa Monica, CA</div>
           </div>
-        </div>
-        <!--here is the image below the header image-->
+        </section>
+        <p class="lead mb-5" style="margin:0rem 3rem">I am experienced in using agile frameworks to provide dependable and robust applications.
+          I am interested in creative and challenging projects, as well as working in a fast pace and modern environment.</p>
+
+        <hr class="m-0">
+
+        <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+          <div class="w-100">
+            <h2 class="mb-5">Experience</h2>
+
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div class="resume-content">
+                <h3 class="mb-0">Associate Software Engineer</h3>
+                <div class="subheading mb-3">Linquest Corp.</div>
+                <p>Software Engineer working with a team to develop various web applications through the use of HTML, XSLT, Javascript, CSS,
+                  and jQuery on a Sharepoint Server. Daily tasks include scrum meetings, coordination with product owners,
+                  development on speciﬁc tasks in a sprint, and collaboration with other teammates. Our team develops lists,
+                  custom web parts and views, forms, and workﬂows for storing and sharing ﬁles with the US Air Force.</p>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">July 2018 - Present</span>
+              </div>
+            </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div class="resume-content">
+                <h3 class="mb-0"> Software Intern </h3>
+                <div class="subheading mb-3">Linquest Corp. </div>
+                <p>Software intern working to develop various web applications. Main project was building a custom Badge
+                  and Security Card tracking system using Microsoft Sharepoint. The tracking system consisted of several lists
+                  for storing IDs and descriptions, as well as forms and other custom pages built from HTML and Javascript.</p>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">Summer 2017</span>
+              </div>
+            </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div class="resume-content">
+                <h3 class="mb-0">Programming Tutor</h3>
+                <div class="subheading mb-3">UC Santa Cruz</div>
+                <p>Provided small group and individual for an introductory java programming class at UC Santa Cruz.
+                  Worked closely with a professor to schedule one on one sessions for struggling students and held
+                  weekly drop in hours for students to ask questions. </p>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">2016 - 2018</span>
+              </div>
+            </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+              <div class="resume-content">
+                <h3 class="mb-0">Driver & QA Tester</h3>
+                <div class="subheading mb-3">Shout! Media Productions</div>
+                <p>QA tester and Driver developing an iOS and Android app to provide free rides in the area.
+                  Time was split between testing the beta application, and driving cars around for the company. </p>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">Summer 2016</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="m-0">
+
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+          <div class="w-100">
+            <h2 class="mb-5">Education</h2>
+
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div class="resume-content">
+                <h3 class="mb-0">University of California, Santa Cruz</h3>
+                <div class="subheading mb-3">Bachelor of Science - Computer Science</div>
+                <p>GPA: 3.2</p>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">October 2014 - June 2018</span>
+              </div>
+            </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+              <div class="resume-content">
+                <h3 class="mb-0">Santa Monica High School</h3>
+                <div class="subheading mb-3"></div>
+                <p>GPA: 3.8</p>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">August 2011 - June 2018</span>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <hr class="m-0">
+
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+          <div class="w-100">
+            <h2 class="mb-5">Skills</h2>
+
+            <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+            <ul class="list-inline dev-icons">
+              <li class="list-inline-item">
+                <i class="fab fa-html5"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-css3-alt"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-js-square"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-github"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-java"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fas fa-terminal"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-react"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-python"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fas fa-mobile"></i>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-npm"></i>
+              </li>
+            </ul>
+
+            <div class="subheading mb-3">Workflow</div>
+            <ul class="fa-ul mb-0">
+              <li>
+                <i class="fa-li fa fa-check"></i> Development Using Source Control</li>
+              <li>
+                <i class="fa-li fa fa-check"></i> Cross Browser Testing &amp; Debugging</li>
+              <li>
+                <i class="fa-li fa fa-check"></i> REST and SOAP Database Communication</li>
+              <li>
+                <i class="fa-li fa fa-check"></i> Agile Development &amp; Scrum</li>
+            </ul>
+          </div>
+        </section>
+
+        <hr class="m-0">
+
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center">
+          <div class="w-100">
+            <h2 class="mb-5">Classes</h2>
+            <ul class="fa-ul mb-0">
+              <li>
+                <i class="fa-li fas fa-book"></i> Operating Systems - Python </li>
+              <li>
+                <i class="fa-li fas fa-book"></i> Advanced Programming - C, Java </li>
+              <li>
+                <i class="fa-li fas fa-book"></i> Mobile and Web applications - HTML, CSS, Java, Javascript, Swift, jQuery </li>
+              <li>
+                <i class="fa-li fas fa-book"></i> Software Engineering - Agile approach, HTML, CSS, jQuery</li>
+              <li>
+                <i class="fa-li fas fa-book"></i> Machine Learning - C, Python</li>
+            </ul>
+          </div>
+          <div class="w-100">
+            <h2 class="mb-5">Interests</h2>
+            <ul class="fa-ul mb-0">
+              <li>
+                <i class="fas fa-lightbulb"></i> Full Stack Web Development </li>
+              <li>
+                <i class="fas fa-lightbulb"></i> Street Art </li>
+              <li>
+                <i class="fas fa-lightbulb"></i> Mobile Application Design </li>
+              <li>
+                <i class="fas fa-lightbulb"></i> Creative Design and Media </li>
+            </ul>
+          </div>
+        </section>
+
+        <hr class="m-0">
+
+        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+          <div class="w-100">
+            <h2 class="mb-5">Awards &amp; Events</h2>
+            <ul class="fa-ul mb-0">
+              <li>
+                <i class="fa-li fa fa-trophy text-warning"></i> Deans Honors Award at UC Santa Cruz </li>
+              <li>
+                <i class="fa-li fa fa-trophy text-warning"></i> Gruzen Memorial Art Scholarship </li>
+              <li>
+                <i class="fa-li fa fa-trophy text-warning"></i> Art Gallery Exhibitor; Pacific Palisades, CA</li>
+            </ul>
+          </div>
+        </section>
       </div>
-    </section>
+    </div>
+  </section>
 
+  <!-- Projects Section -->
+  <section class="projects-background-image bg-light" id="projects">
+    <div class="container projects-section">
 
-    <section class="resume-container bg-light">
-      <div class='resume-download'>
-        <h2> My Resume
-          <a href="/Downloadables/DylanKleinmanResume.pdf" download="DylanKleinmanResume.pdf">
-            <i class="download-button btn-primary fa fa-download" aria-hidden="true" id="resume" title="Download a copy of my resume">
-              <span style="font-family: Nunito; margin-left:5px; font-weight: 300;">Download</span>
-            </i>
-          </a>
-        </h2>
-        <hr class="Resume-Bar">
-      </div>
-      <div class="container card img-shadow" style="max-width:70%">
-        <div class="container-fluid p-0" id="resume-box" style=" height:700px;">
-          <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-            <div class="w-100">
-              <h1 class="mb-0">Dylan
-                <span class="text-primary">Kleinman</span>
-              </h1>
-              <div class="subheading mb-5">2302 24th Street, Santa Monica, CA</div>
-              <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value
-                proposition.</p>
-            </div>
-          </section>
-
-          <hr class="m-0">
-
-          <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-            <div class="w-100">
-              <h2 class="mb-5">Experience</h2>
-
-              <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="resume-content">
-                  <h3 class="mb-0">Associate Software Engineer</h3>
-                  <div class="subheading mb-3">Linquest Corp.</div>
-                  <p>Software Engineer working with a team to develop various web applications through the use of HTML, XSLT, Javascript, CSS,
-                    and jQuery on a Sharepoint Server. Daily tasks include scrum meetings, coordination with product owners,
-                    development on speciﬁc tasks in a sprint, and collaboration with other teammates. Our team develops lists,
-                    custom web parts and views, forms, and workﬂows for storing and sharing ﬁles with the US Air Force.</p>
-                </div>
-                <div class="resume-date text-md-right">
-                  <span class="text-primary">July 2018 - Present</span>
-                </div>
-              </div>
-
-              <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="resume-content">
-                  <h3 class="mb-0"> Software Intern </h3>
-                  <div class="subheading mb-3">Linquest Corp. </div>
-                  <p>Software intern working to develop various web applications. Main project was building a custom Badge
-                    and Security Card tracking system using Microsoft Sharepoint. The tracking system consisted of several lists
-                    for storing IDs and descriptions, as well as forms and other custom pages built from HTML and Javascript.</p>
-                </div>
-                <div class="resume-date text-md-right">
-                  <span class="text-primary">Summer 2017</span>
-                </div>
-              </div>
-
-              <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="resume-content">
-                  <h3 class="mb-0">Programming Tutor</h3>
-                  <div class="subheading mb-3">UC Santa Cruz</div>
-                  <p>Provided small group and individual for an introductory java programming class at UC Santa Cruz.
-                    Worked closely with a professor to schedule one on one sessions for struggling students and held
-                    weekly drop in hours for students to ask questions. </p>
-                </div>
-                <div class="resume-date text-md-right">
-                  <span class="text-primary">2016 - 2018</span>
-                </div>
-              </div>
-
-              <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-                <div class="resume-content">
-                  <h3 class="mb-0">Driver & QA Tester</h3>
-                  <div class="subheading mb-3">Shout! Media Productions</div>
-                  <p>QA tester and Driver developing an iOS and Android app to provide free rides in the area.
-                    Time was split between testing the beta application, and driving cars around for the company. </p>
-                </div>
-                <div class="resume-date text-md-right">
-                  <span class="text-primary">Summer 2016</span>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <hr class="m-0">
-
-          <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-            <div class="w-100">
-              <h2 class="mb-5">Education</h2>
-
-              <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                <div class="resume-content">
-                  <h3 class="mb-0">University of California, Santa Cruz</h3>
-                  <div class="subheading mb-3">Bachelor of Science - Computer Science</div>
-                  <p>GPA: 3.2</p>
-                </div>
-                <div class="resume-date text-md-right">
-                  <span class="text-primary">October 2014 - June 2018</span>
-                </div>
-              </div>
-
-              <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-                <div class="resume-content">
-                  <h3 class="mb-0">Santa Monica High School</h3>
-                  <div class="subheading mb-3"></div>
-                  <p>GPA: 3.8</p>
-                </div>
-                <div class="resume-date text-md-right">
-                  <span class="text-primary">August 2011 - June 2018</span>
-                </div>
-              </div>
-
-            </div>
-          </section>
-
-          <hr class="m-0">
-
-          <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-            <div class="w-100">
-              <h2 class="mb-5">Skills</h2>
-
-              <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-              <ul class="list-inline dev-icons">
-                <li class="list-inline-item">
-                  <i class="fab fa-html5"></i>
-                </li>
-                <li class="list-inline-item">
-                  <i class="fab fa-css3-alt"></i>
-                </li>
-                <li class="list-inline-item">
-                  <i class="fab fa-js-square"></i>
-                </li>
-                <li class="list-inline-item">
-                  <i class="fab fa-github"></i>
-                </li>
-                <li class="list-inline-item">
-                  <i class="fas fa-terminal"></i>
-                </li>
-                <li class="list-inline-item">
-                  <i class="fab fa-react"></i>
-                </li>
-                <li class="list-inline-item">
-                  <i class="fab fa-python"></i>
-                </li>
-                <li class="list-inline-item">
-                  <i class="fas fa-mobile"></i>
-                </li>
-                <li class="list-inline-item">
-                  <i class="fab fa-npm"></i>
-                </li>
-              </ul>
-
-              <div class="subheading mb-3">Workflow</div>
-              <ul class="fa-ul mb-0">
-                <li>
-                  <i class="fa-li fa fa-check"></i> Development Using Source Control</li>
-                <li>
-                  <i class="fa-li fa fa-check"></i> Cross Browser Testing &amp; Debugging</li>
-                <li>
-                  <i class="fa-li fa fa-check"></i> REST and SOAP Database Communication</li>
-                <li>
-                  <i class="fa-li fa fa-check"></i> Agile Development &amp; Scrum</li>
-              </ul>
-            </div>
-          </section>
-
-          <hr class="m-0">
-
-          <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-            <div class="w-100">
-              <h2 class="mb-5">Classes</h2>
-              <ul class="fa-ul mb-0">
-                <li>
-                  <i class="fa-li fas fa-book"></i> Operating Systems - Python </li>
-                <li>
-                  <i class="fa-li fas fa-book"></i> Advanced Programming - C, Java </li>
-                <li>
-                  <i class="fa-li fas fa-book"></i> Mobile and Web applications - HTML, CSS, Java, Javascript, Swift, jQuery </li>
-                <li>
-                  <i class="fa-li fas fa-book"></i> Software Engineering - Agile approach, HTML, CSS, jQuery</li>
-                <li>
-                  <i class="fa-li fas fa-book"></i> Machine Learning - C, Python</li>
-              </ul>
-            </div>
-            <div class="w-100">
-              <h2 class="mb-5">Interests</h2>
-              <ul class="fa-ul mb-0">
-                <li>
-                  <i class="fas fa-lightbulb"></i> Full Stack Web Development </li>
-                <li>
-                  <i class="fas fa-lightbulb"></i> Street Art  </li>
-                <li>
-                  <i class="fas fa-lightbulb"></i> Mobile Application Design </li>
-                <li>
-                  <i class="fas fa-lightbulb"></i> Creative Design and Media </li>
-              </ul>
-            </div>
-          </section>
-
-          <hr class="m-0">
-
-          <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-            <div class="w-100">
-              <h2 class="mb-5">Awards &amp; Events</h2>
-              <ul class="fa-ul mb-0">
-                <li>
-                  <i class="fa-li fa fa-trophy text-warning"></i> Deans Honors Award at UC Santa Cruz </li>
-                <li>
-                  <i class="fa-li fa fa-trophy text-warning"></i> Gruzen Memorial Art Scholarship </li>
-                <li>
-                  <i class="fa-li fa fa-trophy text-warning"></i> Art Gallery Exhibitor; Pacific Palisades, CA</li>
-              </ul>
-            </div>
-          </section>
+      <!-- Featured Project Row -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          <img class="img-shadow Image1 img-fluid mb-3 mb-lg-0" align="middle" src="img/IMG_0200.jpg" alt="">
         </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects-background-image bg-light" id="projects">
-      <div class="container projects-section">
-
-        <!-- Featured Project Row -->
-        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div class="col-xl-8 col-lg-7">
-            <img class="img-shadow Image1 img-fluid mb-3 mb-lg-0" align="middle" src="img/IMG_0200.jpg" alt="">
-          </div>
-          <div class="col-xl-4 col-lg-5">
-            <div class="featured-text text-center text-lg-left">
-              <h4>What I Do</h4>
-              <p class="text-black-50 mb-0">I am a Software Developer with a focus in Web Development. I work mainly with HTML, CSS, JavaScript, and jQuery. I love discovering new plugins and libraries that that are visually appealling and improve
-                the user experience.</p>
-                <button type="submit" onclick="location.href='/Projects.html';" class="right-box-button btn btn-primary" style="margin-top: 15px;">Check Out My Projects</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project One Row -->
-        <div class="row justify-content-center no-gutters mb-5 mb-lg-0" style="padding-top:50px;">
-          <div class="LeftBox col-lg-6">
-            <div class="slider">
-              <div>
-                <img class="img-fluid img-shadow" src="img/dylankleinman7.jpg" style="margin-top:100px;" alt="">
-              </div>
-              <div>
-                <img class="img-fluid img-shadow" src="img/dylankleinman22.jpg" alt="">
-              </div>
-              <div>
-                <img class="img-fluid img-shadow" src="img/dylankleinman10.jpg" style="margin-top:125px;" alt="">
-              </div>
-              <div>
-                <img class="img-fluid img-shadow" src="img/dylankleinman19.jpg" style="margin-top:50px;" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="bg-black text-center h-100 project">
-              <div class="h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-left" style="padding-top:10rem">
-                  <h4 class="text-white">My Art</h4>
-                  <p class="mb-0 text-white-50">I started painting in high school during my study abroad in Italy, and although street art isn't common in Santa Monica, I still fell in love with it. I was never great at drawing figures or doing
-                    still-lifes, so during my senior year
-                    paint brushes turned into paint cans, pens turned into markers, and canvases ... well lets just say they stayed canvases.
-                  </p>
-                  <hr class="d-none d-lg-block mb-0 ml-0">
-                </div>
-                <button type="submit" onclick="location.href='/Art.html';" class="right-box-button btn btn-primary">See More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project Two Row -->
-        <div class="row justify-content-center no-gutters">
-          <div class="LeftBox col-lg-6">
-            <img class="img-fluid PanelImages" src="img/IMG_3293.jpg" alt="">
-          </div>
-          <div class="col-lg-6 order-lg-first">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white">Mountains</h4>
-                  <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                  <hr class="d-none d-lg-block mb-0 mr-0">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-    </section>
-
-    <!-- Signup Section -->
-    <section id="signup" class="signup-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-lg-8 mx-auto text-center">
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>What I Do</h4>
+            <p class="text-black-50 mb-0">I am a Software Developer with a focus in Web Development.
+              My priority when developing is the User Experience, such that there is never
+              a dull moment when using my applications.  I love discovering new frameworks, libraries, and plugins that I can explore and mess around with.</p>
+            <button type="submit" onclick="location.href='/Projects.html';" class="right-box-button btn btn-primary" style="margin-top: 15px;">Check Out My Projects</button>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section bg-black">
-      <div class="container">
+      <!-- Project One Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0" style="padding-top:50px;">
+        <div class="LeftBox col-lg-6">
+          <div class="slider">
+            <div>
+              <img class="img-fluid img-shadow" src="img/dylankleinman7.jpg" style="margin-top:100px;" alt="">
+            </div>
+            <div>
+              <img class="img-fluid img-shadow" src="img/dylankleinman22.jpg" alt="">
+            </div>
+            <div>
+              <img class="img-fluid img-shadow" src="img/dylankleinman10.jpg" style="margin-top:125px;" alt="">
+            </div>
+            <div>
+              <img class="img-fluid img-shadow" src="img/dylankleinman19.jpg" style="margin-top:50px;" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left" style="padding-top:10rem">
+                <h4 class="text-white">My Art</h4>
+                <p class="mb-0 text-white-50">I started painting in high school during my study abroad in Italy, and after returning home I enrolled in an AP Art class.
+                  I was never into drawing figures or doing
+                  still-lifes, so during my senior year
+                  my art transitioned into more of a graffiti/street/doodling style.
+                </p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+              <button type="submit" onclick="location.href='/Art.html';" class="right-box-button btn btn-primary">See More</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <div class="row">
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Location</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">Santa Monica, CA</div>
+      <!-- Project Two Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="LeftBox col-lg-6">
+          <div id="video-back">
+            <video autoplay muted loop class="vidbacking">
+              <source src="img/Rallye.mp4" type="video/mp4">
+            </video>
+            <h1>Vidbacking Demo of &lt;div&gt; Background</h1>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-first" id="videobackground">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">My Life</h4>
+                <p class="mb-0 text-white-50">Most of my free time is spent surfing, traveling, spending time with my dogs &amp; family, trying new food, or exploring stumbleupon</p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-envelope text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Email</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">
-                  <a href="#">dylankkleinman@gmail.com</a>
-                </div>
-              </div>
+  <!-- Signup Section -->
+  <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section bg-black">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Location</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">Santa Monica, CA</div>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Phone</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">(310) 913 9166</div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="#">dylankkleinman@gmail.com</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="social d-flex justify-content-center">
-          <a href="https://www.facebook.com/dylkleinperson" class="mx-2">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/dylankleinman/" class="mx-2">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/dylankleinman/" class="mx-2">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.instagram.com/dylankleinman/" class="mx-2">
-            <i class="fab fa-instagram"></i>
-          </a>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">(310) 913 9166</div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- Footer -->
-    <footer class="bg-black small text-center text-white-50">
-      <div class="container">
-        Copyright &copy; dylankleinman.com 2019
+
+      <div class="social d-flex justify-content-center">
+        <a href="https://www.facebook.com/dylkleinperson" class="mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/dylankleinman/" class="mx-2">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/dylankleinman/" class="mx-2">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/dylankleinman/" class="mx-2">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
-    </footer>
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; dylankleinman.com 2019
+    </div>
+  </footer>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/grayscale.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/Carousel.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-  </div>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/jquery.vidbacking.js"></script>
+
   </div>
 </body>
 

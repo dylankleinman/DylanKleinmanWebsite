@@ -12,6 +12,7 @@
    text-align: left;
    border-color: #64a19d;
    border-width: 0.25rem;
+   display: inline-block;
  }
 
  .mCSB_inside > .mCSB_container {
