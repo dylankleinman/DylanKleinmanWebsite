@@ -1,7 +1,5 @@
 $(document).ready(function(){
-  console.log('ready');
   //example of three.js
-  console.log((window.location.href).includes('Projects'));
 
   var WIDTH = (window.location.href).includes('Projects') ? $(window).width() : 600,
     HEIGHT = (window.location.href).includes('Projects') ? $(window).height() : 500;
