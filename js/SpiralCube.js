@@ -1,7 +1,10 @@
 $(document).ready(function(){
   //example of three.js
+  var divwidth = ($('#display-project').width() > 450 ? 500 : $('#display-project').width());
 
-  var WIDTH = (window.location.href).includes('Projects') ? $(window).width() : 600,
+  console.log(divwidth);
+
+  var WIDTH = (window.location.href).includes('Projects') ? $(window).width() : divwidth,
     HEIGHT = (window.location.href).includes('Projects') ? $(window).height() : 500;
 
   var FOV = 75,

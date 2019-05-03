@@ -94,9 +94,11 @@
       <hr class="Resume-Bar">
     </div>
     <div class="container card img-shadow" id="max-resume-width" style="max-width:70%">
-      <div class="container-fluid p-0" id="resume-box" style=" height:700px;">
+      <div class="container-fluid p-0" id="resume-box" style=" height:700px; ">
         <section class="resume-section p-3 p-lg-5 d-flex align-items-center">
-          <img class="img-fluid img-shadow" src="img/Profile.jpg" style="max-height:150px; border-radius:50%; margin-right: 35px;">
+          <div style="width:150px; height:150px; margin-right: 35px;">
+            <img class="img-fluid img-shadow" src="img/Profile.jpg" style=" border-radius:50%;">
+          </div>
           <div class="w-100">
             <h1 class="mb-0">Dylan
               <span class="text-primary">Kleinman</span>
@@ -177,7 +179,6 @@
               <div class="resume-content">
                 <h3 class="mb-0">University of California, Santa Cruz</h3>
                 <div class="subheading mb-3">Bachelor of Science - Computer Science</div>
-                <p>GPA: 3.2</p>
               </div>
               <div class="resume-date text-md-right">
                 <span class="text-primary">October 2014 - June 2018</span>
@@ -188,7 +189,6 @@
               <div class="resume-content">
                 <h3 class="mb-0">Santa Monica High School</h3>
                 <div class="subheading mb-3"></div>
-                <p>GPA: 3.8</p>
               </div>
               <div class="resume-date text-md-right">
                 <span class="text-primary">August 2011 - June 2014</span>
@@ -310,7 +310,7 @@
 
       <!-- Featured Project Row -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7" id="display-project">
+        <div class="col-xl-8 col-lg-7" id="display-project" >
           <!--<img class="img-shadow Image1 img-fluid mb-3 mb-lg-0" align="middle" src="img/IMG_0200.jpg" alt="">-->
         </div>
         <div class="col-xl-4 col-lg-5">
@@ -367,10 +367,8 @@
       <div class="row justify-content-center no-gutters">
         <div class="LeftBox col-lg-6">
           <div id="video-back">
-            <!--<div style="width: 1000px; height: 500px;"
-              data-vide-bg="img/Compressed_movie.mp4" data-vide-options="position: 0% 0%">
-            </div>-->
-            <video poster="/img/Compressed_movie.png" autoplay muted loop class="vidbacking" style="max-height:500px; margin-left:-200px;">
+            <!-- the style here was : max-height:500px; margin-left:-200px; but has been changed to show whole video.  May change back.-->
+            <video poster="/img/Compressed_movie.png" autoplay muted loop class="vidbacking" style="max-width:500px;">
               <source src="img/Compressed_movie.mp4" type="video/mp4">
             </video>
           </div>
