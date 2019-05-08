@@ -1,5 +1,5 @@
 # Website of Dylan Kleinman
-Taken from boilerplate of Bootstrap, this will contain my resume, portfolio, github, links and other experimental projects.
+Based off a bootstrap template, this website is a home for my projects, art, and other interests.  This is live at http://dylankleinman.com
 
 
 ## Copyright and License
