@@ -15,7 +15,6 @@ body {
   /* overflow: hidden; */
 }
 
-
 h1,
 h2,
 h3,
@@ -34,6 +33,11 @@ a:hover {
   color: #0078ff;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
+}
+
+.code-image{
+  margin-right: 20px;
+  font-size: 1.5rem !important;
 }
 
 .p-r {
@@ -160,7 +164,7 @@ a:hover {
 }
 
 .line-mf {
-  width: 40px;
+  width: 80px;
   height: 5px;
   background-color: #0078ff;
   margin: 0 auto;
