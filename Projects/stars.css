@@ -75,7 +75,7 @@
       transform: translateY(0px);
     }
     to {
-      transform: translateY(-1000px);
+      transform: translateY(-800px);
     }
   }
   
