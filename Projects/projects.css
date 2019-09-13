@@ -35,6 +35,26 @@ a:hover {
   transition: all 0.5s ease-in-out;
 }
 
+.pointer{
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 80%;
+   max-width:1200px;
+  }
+}
+
+.modal-left{
+  margin: 50px;
+}
+
+.modal-background{
+  font-family: 'Press Start 2P', cursive;
+  background: repeating-linear-gradient(to bottom, #0f0a1e, #0f0a1e 2px, #140e29 2px, #140e29 4px);
+}
+
 .code-image{
   margin-right: 20px;
   font-size: 1.5rem !important;

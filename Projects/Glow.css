@@ -1,30 +1,23 @@
 @font-face {
     font-family: 'mexcellentregular';
     src: url('/Projects/font/mexcellent_rg-webfont.woff2') format('woff2'),
-         url('/Projects/font/mexcellent_rg-webfont.woff') format('woff');
+         url('/Projects/font/mexcellent_rg-webfont.woff') format('woff'),
+         url('/Projects/font/mexcellent\ rg.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 
 }
 
-.logo {
-    /* text-align: center;
-    width: 500px;
-    height: 250px;
-    margin: auto;
-    position: absolute; */
-  }
-  
-  .logo b{
+  .logo p{
     font-size: 8em;
-    font-family: "mexcellentregular";
+    font-family: "mexcellentregular" !important;
     color: #fee;
     text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #00ad9f, 0 0 0.5em #00ad9f, 0 0 0.1em #00ad9f, 0 10px 3px #000;
   }
-  .logo b span{
+  .logo p span{
     animation: blink linear infinite 2s;
   }
-  .logo b span:nth-of-type(2){
+  .logo p span:nth-of-type(2){
     animation: blink linear infinite 3s;
   }
   @keyframes blink {
