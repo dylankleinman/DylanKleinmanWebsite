@@ -12,6 +12,17 @@ $(document).ready(function() {
     prevArrow: '<a class="pointer carousel-control-prev" role="button"><span class=" carousel-control-prev-icon" aria-hidden="true"></span></a>',
   });
 
+    /*--/ Star Typed /--*/
+    console.log('here');
+    var typed_strings = $('.text-slider-items').text();
+		var typed = new Typed('.text-slider', {
+			strings: typed_strings.split(','),
+			typeSpeed: 80,
+			loop: true,
+			backDelay: 1100,
+			backSpeed: 30
+		});
+
   //Remove default scroll bar and set the custom scrollbar to body
   // get the width of the resume /100 so that when scrolling, the bar across the top increases to 100% of the resume box.
   //var MaxWidth = $('#max-resume-width').width()/100;
