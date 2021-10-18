@@ -1,5 +1,5 @@
 # Website of Dylan Kleinman
-Based off a bootstrap template, this website is a home for my projects, art, and other interests.  This is live at http://dylankleinman.com
+Based off a bootstrap template, this website is a home for my projects, art, and other interests.  Built with HTML, CSS, and jQuery with multiple pages and plugins. 
 
 
 ## Copyright and License
